@@ -1,0 +1,209 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+.ppcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 3rem;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #B8CFD6;
+}
+
+.ppcontainer .name{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: solid 1px #000;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: whitesmoke;
+}
+
+.ppcontainer h3{
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  padding: 1rem;
+  border: solid 1px #000;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.pp {
+  padding-top: 1rem;
+  border-radius: 15rem;
+}
+
+.biblio{
+  max-width: 20rem;
+  border: solid 1px #000;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: #F5F5F5;
+  border-radius: 1rem;
+}
+
+.biblio h2{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.biblio p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: #B8CFD6;
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6{
+  max-width: 18.8rem;
+  border: solid 1px #000;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: #F5F5F5;
+  padding: 0.5rem;
+  margin-bottom: 2.5rem; /* Espacio entre las filas de cartas */
+  transform: rotate(7deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.project1, .project3, .project5{
+  transform: rotate(-7deg);
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover{
+  transform: rotate(0deg);
+}
+
+/* Seleccionamos específicamente los tres primeros proyectos para darles un margen a la derecha, excepto el último de la fila */
+.project1, .project2, .project3:not(:last-child){
+  margin-right: 2.5rem;
+}
+
+.project1 .imgbp, .project2 .imgcs, .project3 .imgtodo, .project4 .imgrej, .project5 .imgahdesa{
+  max-width: 18.8rem;
+  border: solid 1px #000;
+  background-color: beige;
+}
+
+.project1 h2, .project2 h2, .project3 h2, .project4 h2, .project5 h2, .project6 h2{
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project1 p, .project2 p, .project3 p, .project4 p, .project5 p, .project6 p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.formcont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px; 
+}
+
+.formulario {
+  flex: 1; 
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario form legend {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.formulario input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5C6BC0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #3949AB;
+}
+
+.mensaje {
+  flex: 1; 
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.mensaje p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.redes a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.redes img {
+  border-radius: 50%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.redes img:hover {
+  transform: scale(1.1); 
+}
+

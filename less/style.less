@@ -1,0 +1,347 @@
+@primary-bg-color: #B8CFD6;
+@secondary-bg-color: #F5F5F5;
+@card-bg-color: rgb(245, 245, 245);
+@secondary-bg-card-color: beige;
+@primary-text-color: #333;
+@secondary-text-color: #666;
+@third-text-color: #000;
+@card-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+@secondary-card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: @secondary-bg-color;
+}
+
+.ppcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 3rem;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: @primary-bg-color;
+  .name {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: solid 1px @third-text-color;
+    padding: 1rem;
+    box-shadow: @card-shadow;
+    background-color: @card-bg-color;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    padding: 1rem;
+    border: solid 1px @primary-text-color;
+    box-shadow: @card-shadow;
+    background-color: @secondary-bg-color;
+    text-align: center;
+  }
+}
+
+.pp {
+  padding-top: 1rem;
+  border-radius: 15rem;
+}
+
+.biblio {
+  max-width: 20rem;
+  border: solid 1px @third-text-color;
+  box-shadow: @card-shadow;
+  background-color: @secondary-bg-color;
+  border-radius: 1rem;
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    padding: 1rem;
+  }
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    background-color: @primary-bg-color;
+}
+
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+  max-width: 18.8rem;
+  border: solid 1px @third-text-color;
+  box-shadow: @card-shadow;
+  background-color: @card-bg-color;
+  padding: 0.5rem;
+  margin-bottom: 2.5rem; /* Espacio entre las filas de cartas */
+  transform: rotate(7deg);
+  transition: all 0.5s ease-in-out;;
+}
+
+.project1,
+.project3,
+.project5 {
+  transform: rotate(-7deg);
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover {
+  transform: rotate(0deg);
+}
+
+.project1, .project2, .project3:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.project1{
+    .imgbp{
+        max-width: 18.8rem;
+        border: solid 1px @third-text-color;
+        background-color: @secondary-bg-card-color;
+    }
+}
+
+.project2{
+    .imgcs{
+        max-width: 18.8rem;
+        border: solid 1px @third-text-color;
+        background-color: @secondary-bg-card-color;
+    }
+}
+
+.project3{
+    .imgtodo{
+        max-width: 18.8rem;
+        border: solid 1px @third-text-color;
+        background-color: @secondary-bg-card-color;
+    }
+}
+
+.project4{
+    .imgrej{
+        max-width: 18.8rem;
+        border: solid 1px @third-text-color;
+        background-color: @secondary-bg-card-color;
+    }
+}
+
+.project5{
+    .imgahdesa{
+        max-width: 18.8rem;
+        border: solid 1px @third-text-color;
+        background-color: @secondary-bg-card-color;
+    }
+}
+
+.project1{
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+.project2{
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+.project3{
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+.project4{
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+.project5{
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+
+.project6{
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+.project1{
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.project2{
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.project3{
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.project4{
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.project5{
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.project6{
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.formcont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.formulario {
+    flex: 1; 
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        legend {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: @primary-text-color;
+        }
+    }
+    input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #5C6BC0;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #3949AB;
+}
+
+.mensaje {
+    flex: 1; 
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: @secondary-card-shadow;
+    h2 {
+        color: @primary-text-color;
+        margin-bottom: 15px;
+    }
+    p {
+        color: @secondary-text-color;
+        margin-bottom: 20px;
+    }
+
+}
+
+.redes{
+    a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    img {
+        border-radius: 50%; 
+        box-shadow: @secondary-card-shadow;
+        transition: transform 0.3s;
+    }
+    img:hover {
+        transform: scale(1.1); 
+    }
+}
+
